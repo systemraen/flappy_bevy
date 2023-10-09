@@ -9,7 +9,7 @@ name = "mobile"
 crate-type = ["staticlib", "cdylib"]
 
 [dependencies]
-flappy_bevy = { path = ".." } # ToDo
+flappy_bevy = { path = ".." }
 bevy = { version = "0.11", default-features = false }
 
 # As long as Kira doesn't expose a feature for this, we need to enable it our self
@@ -19,8 +19,8 @@ version = "0.15"
 features = ["oboe-shared-stdcxx"]
 
 [package.metadata.android]
-package = "me.aethersailor.flappybevy"  # ToDo
-apk_name = "FlappyBevy"  # ToDo same as GAME_OSX_APP_NAME in release workflow
+package = "me.aethersailor.flappybevy"
+apk_name = "FlappyBevy"
 assets = "../assets"
 strip = "strip"
 resources = "../build/android/res"

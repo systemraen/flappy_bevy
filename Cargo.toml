@@ -1,8 +1,8 @@
 [package]
-name = "flappy_bevy" # ToDo
+name = "flappy_bevy"
 version = "0.1.0"
 publish = false
-authors = ["Niklas Eicker <git@nikl.me>"] # ToDo: you are the author ;)
+authors = ["Raena Herron <raen@quantumtrip.org>"]
 edition = "2021"
 exclude = ["dist", "build", "assets", "credits"]
 
