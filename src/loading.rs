@@ -36,6 +36,14 @@ pub struct AudioAssets {
 
 #[derive(AssetCollection, Resource)]
 pub struct TextureAssets {
-    #[asset(path = "textures/bevy.png")]
+    #[asset(path = "textures/bevy_single.png")]
     pub texture_bevy: Handle<Image>,
+    #[asset(path = "textures/pipe.png")]
+    pub texture_pipe: Handle<Image>,
+    #[asset(path = "textures/ground.png")]
+    pub texture_ground: Handle<Image>,
+    #[asset(path = "textures/background.png")]
+    pub texture_background: Handle<Image>,
+    #[asset(path = "textures/score.png")]
+    pub texture_score: Handle<Image>,
 }
