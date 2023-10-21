@@ -10,7 +10,7 @@ pub struct Background;
 
 impl Plugin for BackgroundPlugin {
     fn build(&self, app: &mut App) {
-        app.add_systems(OnEnter(GameState::Playing), load_background);
+        app.add_systems(OnEnter(GameState::Menu), load_background);
     }
 }
 
