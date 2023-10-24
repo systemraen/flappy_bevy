@@ -2,19 +2,21 @@
 
 mod actions;
 mod audio;
+mod background;
 mod loading;
 mod menu;
-mod player;
-mod background;
 mod pipe;
+mod player;
+mod ground;
 
 use crate::actions::ActionsPlugin;
 use crate::audio::InternalAudioPlugin;
+use crate::background::BackgroundPlugin;
 use crate::loading::LoadingPlugin;
 use crate::menu::MenuPlugin;
-use crate::player::PlayerPlugin;
-use crate::background::BackgroundPlugin;
 use crate::pipe::PipePlugin;
+use crate::player::PlayerPlugin;
+use crate::ground::GroundPlugin;
 
 use bevy::app::App;
 #[cfg(debug_assertions)]
@@ -46,7 +48,8 @@ impl Plugin for GamePlugin {
             InternalAudioPlugin,
             PlayerPlugin,
             BackgroundPlugin,
-            PipePlugin
+            PipePlugin,
+            GroundPlugin,
         ));
 
         #[cfg(debug_assertions)]
